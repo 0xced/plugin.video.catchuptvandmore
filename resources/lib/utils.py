@@ -185,22 +185,6 @@ def clear_cache():
     send_notification(common.GETTEXT('Cache cleared'))
 
 
-def vpn_context_menu_item():
-    vpn_label = common.GETTEXT('Connect VPN')
-    storage = common.sp.MemStorage('vpn')
-    if 'status' in storage:
-        if storage['status'] == "connected":
-            vpn_label = common.GETTEXT('Disconnect VPN')
-    else:
-        storage['status'] = "disconnected"
-    vpn = (
-        vpn_label,
-        'XBMC.RunPlugin(' + common.PLUGIN.get_url(
-            action='vpn_entry') + ')'
-    )
-    return vpn
-
-
 def get_module(params):
     """
     get_module allows us to load the desired python file

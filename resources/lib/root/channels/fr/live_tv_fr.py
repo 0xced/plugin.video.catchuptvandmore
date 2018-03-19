@@ -215,8 +215,6 @@ def build_live_tv_menu(params):
         )
         context_menu.append(hide)
 
-        context_menu.append(utils.vpn_context_menu_item())
-
         image = None
         plot = None
         aspect = None

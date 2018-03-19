@@ -22,7 +22,6 @@
 
 from resources.lib import skeleton
 from resources.lib import common
-from resources.lib import vpn
 from resources.lib import utils
 from resources.lib.root.channels.fr import live_tv_fr
 
@@ -150,8 +149,6 @@ def generic_menu(params):
                     item_id=item_id) + ')'
             )
             context_menu.append(hide)
-
-            context_menu.append(utils.vpn_context_menu_item())
 
             item_path_media = list(current_path)
             item_path_media.append(item_id)
@@ -298,8 +295,6 @@ def build_live_tv_menu(params):
                     item_id=channel_name) + ')'
             )
             context_menu.append(hide)
-
-            context_menu.append(utils.vpn_context_menu_item())
 
             try:
                 item = channel.get_live_item(params)
@@ -452,11 +447,6 @@ def download_video(params):
             YDStreamExtractor.setOutputCallback(None)
     return None
 
-
-@common.PLUGIN.action()
-def vpn_entry(params):
-    vpn.root(params)
-    return None
 
 
 @common.PLUGIN.action()
