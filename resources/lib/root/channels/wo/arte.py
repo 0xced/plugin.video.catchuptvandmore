@@ -26,11 +26,6 @@ from resources.lib import utils
 from resources.lib import common
 
 
-# TO DO
-#   List emissions
-#   Most recent
-#   Most viewed
-
 URL_ROOT = 'https://www.arte.tv/%s/'
 # Language
 

@@ -27,8 +27,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Play Spanish Videos
 
 URL_ROOT = 'https://www.tetesaclaques.tv'
 
@@ -331,5 +329,4 @@ def get_video_url(params):
         else:
             return resolver.get_stream_youtube(video_id, False)
     else:
-        # TO DO Espagnol Video
         return ''

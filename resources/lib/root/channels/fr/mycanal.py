@@ -25,10 +25,6 @@ import json
 from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
-from resources.lib import resolver
-
-# TO DO
-# Wait Kodi 18 to use live with DRM
 
 # URL :
 URL_ROOT_SITE = 'https://www.mycanal.fr'
@@ -85,7 +81,7 @@ def list_shows(params):
 
         for category in replay_jsonparse["landing"]["strates"]:
             if category["type"] == "contentRow" or \
-                category["type"] == "contentGrid":
+                    category["type"] == "contentGrid":
                 if 'title' in category:
                     title = category['title'].encode('utf-8')
                 else:
@@ -122,7 +118,7 @@ def list_shows(params):
 
         for emissions in replay_jsonparse["landing"]["strates"]:
             if emissions["type"] == "contentRow" or \
-                emissions["type"] == "contentGrid":
+                    emissions["type"] == "contentGrid":
                 if params.title == replay_jsonparse["page"]["displayName"].encode('utf-8'):
                     if 'title' not in emissions:
                         for emission in emissions["contents"]:
@@ -176,7 +172,7 @@ def list_shows(params):
 
         for category in replay_jsonparse["landing"]["strates"]:
             if category["type"] == "contentRow" or \
-                category["type"] == "contentGrid":
+                    category["type"] == "contentGrid":
                 if 'title' in category:
                     title = category['title'].encode('utf-8')
                 else:
@@ -218,7 +214,7 @@ def list_videos(params):
 
         for emissions in replay_jsonparse["landing"]["strates"]:
             if emissions["type"] == "contentRow" or \
-                emissions["type"] == "contentGrid":
+                    emissions["type"] == "contentGrid":
 
                 if params.title == replay_jsonparse["page"]["displayName"].encode('utf-8'):
                     if 'title' not in emissions:

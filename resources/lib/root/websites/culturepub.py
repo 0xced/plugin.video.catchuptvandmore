@@ -27,8 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Playlist
 
 URL_ROOT = 'http://www.culturepub.fr'
 
@@ -175,8 +173,6 @@ def list_videos(params):
                 video_img = video.find('img').get('src')
             video_url = URL_ROOT + video.find('h2').find(
                 'a').get('href').encode('utf-8')
-
-            # TO DO Playlist
 
             info = {
                 'video': {

@@ -28,7 +28,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
 
 URL_ROOT = 'https://video.autoplus.fr'
 
@@ -101,7 +100,6 @@ def list_videos(params):
             info_first_video = utils.get_webcontent(url_first_video)
             info_first_video_json = re.compile(
                 'config = (.*?)};').findall(info_first_video)[0]
-            print 'info_first_video_json : ' + info_first_video_json + '}'
             info_first_video_jsonparser = json.loads(
                 info_first_video_json + '}')
 

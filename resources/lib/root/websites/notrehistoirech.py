@@ -24,11 +24,8 @@ import ast
 import re
 from bs4 import BeautifulSoup as bs
 from resources.lib import utils
-from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Download Mode
 
 URL_ROOT = 'http://www.notrehistoire.ch'
 

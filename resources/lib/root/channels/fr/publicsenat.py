@@ -28,10 +28,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Add info LIVE TV
-# Get First-diffusion (date of replay Video)
-
 
 URL_ROOT = 'https://www.publicsenat.fr'
 

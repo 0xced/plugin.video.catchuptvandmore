@@ -26,9 +26,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Fix Download Video
-
 
 # Live
 URL_LIVE_JSON = 'http://dbxm993i42r09.cloudfront.net/' \

@@ -26,8 +26,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-
 
 URL_ROOT = 'http://icitelevision.ca'
 

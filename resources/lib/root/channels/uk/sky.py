@@ -30,9 +30,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Add More Buttons for replay Sky News
-# Some video Sky sports required account (add account)
 
 URL_LIVE_SKYNEWS = 'http://news.sky.com/watch-live'
 
@@ -118,6 +115,7 @@ def root(params):
         category=common.get_window_title()
     )
 
+
 @common.PLUGIN.mem_cached(common.CACHE_TIME)
 def list_shows(params):
     """Build categories listing"""
@@ -134,27 +132,11 @@ def list_shows(params):
                 action='replay_entry',
                 next='list_videos_youtube',
                 page='1',
-                channel_youtube = 'UCE97AW7eR8VVbVPBy4cCLKg',
+                channel_youtube='UCE97AW7eR8VVbVPBy4cCLKg',
                 title=title,
                 window_title=title
             )
         })
-
-        # TO DO (find a way to get json ?)
-        #title = 'Sky Sports Football (youtube)'
-        #shows.append({
-            #'label': title,
-            #'url': common.PLUGIN.get_url(
-                #module_path=params.module_path,
-                #module_name=params.module_name,
-                #action='replay_entry',
-                #next='list_videos_youtube',
-                #page='1',
-                #channel_youtube = 'UCNAf1k0yIjyGu3k9BwAg3lg',
-                #title=title,
-                #window_title=title
-            #)
-        #})
 
         title = 'Sky Sports (youtube)'
         shows.append({
@@ -165,7 +147,7 @@ def list_shows(params):
                 action='replay_entry',
                 next='list_videos_youtube',
                 page='1',
-                channel_youtube = 'UCTU_wC79Dgi9rh4e9-baTqA',
+                channel_youtube='UCTU_wC79Dgi9rh4e9-baTqA',
                 title=title,
                 window_title=title
             )
@@ -206,6 +188,7 @@ def list_shows(params):
         category=common.get_window_title()
     )
 
+
 @common.PLUGIN.mem_cached(common.CACHE_TIME)
 def list_videos(params):
     """Build videos listing"""
@@ -227,7 +210,6 @@ def list_videos(params):
             'window\["ytInitialData"\] = (.*?);').findall(list_videos)[0]
         json_parser = json.loads(json_value)
 
-        # TO DO (simplify and check ?)
         get_tab_contents = json_parser["contents"]["twoColumnBrowseResultsRenderer"]["tabs"][1]
         get_contents = get_tab_contents["tabRenderer"]["content"]["sectionListRenderer"]["contents"][0]
         get_contents_2 = get_contents["itemSectionRenderer"]["contents"][0]
@@ -278,20 +260,6 @@ def list_videos(params):
                 'info': info,
                 'context_menu': context_menu
             })
-
-        # More videos...
-        # videos.append({
-            # 'label': common.ADDON.get_localized_string(30700),
-            # 'url': common.PLUGIN.get_url(
-                #module_path=params.module_path,
-                #module_name=params.module_name,
-                # action='replay_entry',
-                # next='list_videos_news',
-                # page=str(int(params.page) + 1),
-                # update_listing=True,
-                # previous_listing=str(videos)
-            # )
-        # })
 
     elif params.next == 'list_videos_sports':
 
@@ -441,7 +409,6 @@ def get_video_url(params):
                 url_base64 = stream["url"]["data"]
             return base64.standard_b64decode(url_base64)
         else:
-            # No stream (TO DO Authentication)
             return None
     elif params.next == 'download_video':
         return resolver.get_stream_youtube(params.video_id, True)

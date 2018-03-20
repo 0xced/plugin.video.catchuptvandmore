@@ -24,10 +24,6 @@ import re
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Replay add emissions
-# Add info LIVE TV
-
 # Initialize GNU gettext emulation in addon
 # This allows to use UI strings from addon’s English
 # strings.po file instead of numeric codes

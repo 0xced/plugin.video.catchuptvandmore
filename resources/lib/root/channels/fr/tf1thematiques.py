@@ -28,9 +28,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Move WAT to resolver.py (merge with mytf1 code)
-
 
 URL_ROOT = 'https://www.%s.fr'
 # ChannelName

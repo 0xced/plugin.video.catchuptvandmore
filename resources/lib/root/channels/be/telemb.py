@@ -27,10 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Token (live) maybe more work todo
-# RSS get more video ?
-
 
 URL_ROOT = 'https://www.telemb.be'
 

@@ -25,9 +25,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Add info LIVE TV, Replay
-
 
 URL_ROOT = 'http://zonevideo.telequebec.tv'
 

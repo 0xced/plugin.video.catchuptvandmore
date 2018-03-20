@@ -29,10 +29,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Use some API to simplify
-# Add info LIVE TV
-
 # LCP contient deux sources de video pour les replays
 # Old : play1.qbrick.com
 # New : www.dailymotion.com

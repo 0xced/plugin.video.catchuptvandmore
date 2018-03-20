@@ -28,14 +28,13 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
 
 URL_ROOT_VIDEOS = 'http://videos.elle.fr'
 
 URL_ROOT_ELLE_GIRL_TV = 'http://www.elle.fr/'
 
 URL_JSON_ELLE_GIRL_TV = URL_ROOT_ELLE_GIRL_TV + 'ajax/last_articles/' \
-                        'Elle-Girl?page=%s'
+                                                'Elle-Girl?page=%s'
 
 
 def website_entry(params):
@@ -50,6 +49,7 @@ def website_entry(params):
         return get_video_url(params)
     return None
 
+
 CATEGORIES = {
     'Mode': URL_ROOT_VIDEOS + '/les_videos/archive/Mode/%s',
     'Beaute': URL_ROOT_VIDEOS + '/les_videos/archive/Beaute/%s',
@@ -62,6 +62,7 @@ CATEGORIES = {
     'Societe': URL_ROOT_VIDEOS + '/les_videos/archive/Societe/%s',
     'Love & Sexe': URL_ROOT_VIDEOS + '/les_videos/archive/Love&Sexe/%s'
 }
+
 
 @common.PLUGIN.mem_cached(common.CACHE_TIME)
 def root(params):

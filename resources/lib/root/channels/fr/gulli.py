@@ -27,9 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Improve Live TV (Title, picture, plot)
-
 
 SECRET_KEY = '19nBVBxv791Xs'
 

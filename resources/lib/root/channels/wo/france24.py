@@ -29,12 +29,6 @@ from resources.lib import common
 from resources.lib import resolver
 import HTMLParser
 
-# TO DO
-# Replay (emission) | (just 5 first episodes)
-# Add More Button (with api) to download just some part ? (More Work TO DO)
-# Add info LIVE TV (title, picture, plot)
-# Find Replay ES ? (API return Access Denied)
-
 
 URL_LIVE_SITE = 'http://www.france24.com/%s/'
 # Language
@@ -219,8 +213,6 @@ def list_videos(params):
                     'info': info,
                     'context_menu': context_menu
                 })
-
-    # TO DO add More button Video
 
     return common.PLUGIN.create_listing(
         videos,

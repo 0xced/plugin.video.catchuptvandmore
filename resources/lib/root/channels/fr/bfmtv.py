@@ -28,7 +28,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
 
 # BFMTV, RMC, ONENET, etc ...
 URL_TOKEN = 'http://api.nextradiotv.com/%s-applications/'

@@ -27,8 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-
 
 URL_JSON_LIVES = 'https://services.vrt.be/videoplayer/r/live.json'
 # All lives in this JSON

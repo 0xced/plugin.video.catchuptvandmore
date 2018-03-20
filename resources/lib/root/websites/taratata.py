@@ -28,10 +28,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Download Video
-# Find a better solution to strip some text
-# remove YT_DL use API FTV
 
 URL_ROOT = 'https://mytaratata.com'
 

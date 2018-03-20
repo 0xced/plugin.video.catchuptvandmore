@@ -26,9 +26,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# ...
-
 
 URL_ROOT_BRF = 'https://m.brf.be/'
 

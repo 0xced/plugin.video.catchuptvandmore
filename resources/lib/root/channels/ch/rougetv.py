@@ -26,9 +26,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Add http://www.rougefm.com/rouge-play/
-
 
 URL_ROOT = 'http://www.rougefm.com'
 # (www or play), channel_name
@@ -77,7 +74,7 @@ def list_videos(params):
             video_plot = episode.find('p').get_text().strip()
             video_url = episode.find(
                 'div', class_='replaytv_video').get('video-src')
-            # TO DO Get IMG
+
             video_img = ''
 
             info = {

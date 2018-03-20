@@ -29,8 +29,6 @@ from resources.lib import utils
 from resources.lib import common
 
 
-# TO DO
-
 # URL :
 URL_ROOT_SITE = 'http://www.cnews.fr'
 

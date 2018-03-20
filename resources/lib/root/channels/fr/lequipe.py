@@ -27,9 +27,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Get Info Live
-
 
 URL_ROOT = 'https://www.lequipe.fr'
 

@@ -26,12 +26,6 @@ import re
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO and Infos
-# RTR No category (verify in the future ?)
-# Add More Video_button (for category and emissions)
-# Add Info Video
-# Add Quality Mode / test Download Mode
-
 
 URL_ROOT = 'https://%s.%s.ch'
 # (www or play), channel_name

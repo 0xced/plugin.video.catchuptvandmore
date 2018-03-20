@@ -27,11 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Live TV
-# KO Download Mode | How to fix ?
-# Get policyID, Player (build url platform)
-
 URL_ROOT = 'http://www.nbc.com'
 
 URL_SHOWS = 'https://www.nbc.com/shows/all'

@@ -28,10 +28,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Get Info Live
-# Get CATEGORIES
-
 
 URL_ROOT = 'http://www.nrj-play.fr'
 
@@ -51,7 +47,6 @@ URL_GET_API_LIVE = 'http://www.nrj-play.fr/sitemap.xml'
 # NOT_USED in this script (link api, live and more)
 
 URL_COMPTE_LOGIN = 'https://www.nrj-play.fr/compte/login'
-# TO DO add account for using Live Direct
 
 URL_LIVE_WITH_TOKEN = 'http://www.nrj-play.fr/compte/live?channel=%s'
 # channel (nrj12, ...) -

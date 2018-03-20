@@ -26,9 +26,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# emissions alphabetics
-
 
 URL_ROOT = 'http://www.rtl.be/tv/%s/replay'
 # channel name : plugrtl, rtltvi or clubrtl

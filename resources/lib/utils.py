@@ -181,7 +181,7 @@ def clear_cache():
             if os.path.isfile(file_path):
                 os.remove(file_path)
         except Exception as e:
-            print(e)
+            common.PLUGIN.log_error(e)
     send_notification(common.GETTEXT('Cache cleared'))
 
 

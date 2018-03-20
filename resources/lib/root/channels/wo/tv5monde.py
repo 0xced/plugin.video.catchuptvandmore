@@ -27,9 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Download Mode / QUality Mode
-
 
 URL_TV5MAF_ROOT = 'https://afrique.tv5monde.com'
 

@@ -21,10 +21,6 @@
     Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 """
 
-# TO DO
-# Liste A à Z
-# Si FR3 ou FR1: Régions
-
 import ast
 import json
 import re
@@ -784,8 +780,6 @@ def list_videos(params):
 
         list_videos_html = utils.get_webcontent(
             URL_SERIE_DATA_EDUCTION % (params.show_data_name, params.page))
-        print 'URL_SERIE_DATA_EDUCTION: ' + URL_SERIE_DATA_EDUCTION % (
-            params.show_data_name, params.page)
         list_videos_soup = bs(list_videos_html, 'html.parser')
         list_videos_datas = list_videos_soup.find(
             'div', class_='content-section').find_all(
@@ -1320,7 +1314,6 @@ def get_video_url(params):
                 if 'youtube' in url_video_resolver:
                     video_id = url_video_resolver.split(
                         'youtube.com/embed/')[1]
-                    # print 'video_id youtube: ' + video_id
                     if params.next == 'download_video':
                         return resolver.get_stream_youtube(
                             video_id, True)
@@ -1331,7 +1324,6 @@ def get_video_url(params):
                 elif 'dailymotion' in url_video_resolver:
                     video_id = url_video_resolver.split(
                         'dailymotion.com/embed/video/')[1]
-                    # print 'video_id dailymotion: ' + video_id
                     if params.next == 'download_video':
                         return resolver.get_stream_dailymotion(
                             video_id, True)
@@ -1339,7 +1331,6 @@ def get_video_url(params):
                         return resolver.get_stream_dailymotion(
                             video_id, False)
                 else:
-                    # TO DO add new video hosting ?
                     return None
         else:
 

@@ -26,10 +26,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Get more info Live TV (picture, plot)
-# Get year from Replay
-
 
 URL_REPLAY = 'http://www.numero23.fr/replay/'
 

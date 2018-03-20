@@ -25,12 +25,6 @@ import re
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Dailymotion on JARVIS
-# Quality VIMEO
-# Download Mode with Facebook (the video has no audio)
-# Quality Youtube
-
 
 DESIRED_QUALITY = common.PLUGIN.get_setting('quality')
 

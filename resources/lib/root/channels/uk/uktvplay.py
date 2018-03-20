@@ -26,10 +26,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Live TV ?
-# Get IMG from each SHOW (How ? Working on the browser not by wget)
-
 
 URL_ROOT = 'https://uktvplay.uktv.co.uk'
 

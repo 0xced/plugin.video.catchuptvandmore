@@ -26,9 +26,6 @@ import re
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Add More Videos button
-# Add Other Country contents
 
 URL_ROOT = 'http://www.mtv.fr'
 # Contents

@@ -27,11 +27,6 @@ from resources.lib import utils
 from resources.lib import common
 from bs4 import BeautifulSoup as bs
 
-# TO DO
-# Info live (title, picture, plot)
-# Find JS with categories with text, ... ? more reliable
-# Fix errors, show error, etc ...
-
 
 URL_ROOT = 'https://www.bvn.tv'
 

@@ -25,10 +25,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Find a way to get M3U8 (live)
-# Get Info Replay And Live (date, duration, etc ...)
-
 
 URL_ROOT = 'http://www.arirang.com/mobile/'
 

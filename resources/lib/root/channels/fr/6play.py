@@ -26,12 +26,6 @@ import json
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# LIVE TV protected by #EXT-X-FAXS-CM
-# https://helpx.adobe.com/adobe-media-server/dev/configuring-content-protection-hls.html
-# Playlists (cas les blagues de TOTO)
-# Get vtt subtitle
-
 
 # Url to get channel's categories
 # e.g. Info, Divertissement, Séries, ...
@@ -272,8 +266,6 @@ def list_videos(params):
         random_ua=True)
     json_parser = json.loads(program_json)
 
-    # TO DO Playlist More one 'clips'
-
     for video in json_parser:
         video_id = str(video['id'])
 
@@ -363,9 +355,6 @@ def get_video_url(params):
         URL_JSON_VIDEO % (params.video_id),
         random_ua=True)
     json_parser = json.loads(video_json)
-
-    print 'COUCOU'
-    print '\n\n' + video_json + '\n\n'
 
     video_assets = json_parser['clips'][0]['assets']
     if video_assets is None:

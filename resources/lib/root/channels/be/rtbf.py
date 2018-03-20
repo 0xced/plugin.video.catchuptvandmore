@@ -27,10 +27,6 @@ from bs4 import BeautifulSoup as bs
 from resources.lib import utils
 from resources.lib import common
 
-# TO DO
-# Add geoblock (info in JSON)
-# Add Quality Mode
-
 
 URL_EMISSIONS_AUVIO = 'https://www.rtbf.be/auvio/emissions'
 

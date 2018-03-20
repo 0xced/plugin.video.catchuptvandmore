@@ -29,11 +29,6 @@ from resources.lib import utils
 from resources.lib import resolver
 from resources.lib import common
 
-# TO DO
-# Get Last_Page (for Programs, Videos)
-# Get Partner Id ?
-# Todo get Aired, Year, Date of the Video
-
 URL_ROOT = 'http://www.allocine.fr'
 
 URL_API_MEDIA = 'http://api.allocine.fr/rest/v3/' \
@@ -744,7 +739,6 @@ def get_video_url(params):
                 else:
                     return resolver.get_stream_vimeo(
                         video_id, False)
-            # TO DO ? (return an error)
             else:
                 return ''
         else:
@@ -759,6 +753,5 @@ def get_video_url(params):
                 else:
                     return resolver.get_stream_youtube(
                         video_id, False)
-            # TO DO ? (return an error)
             else:
                 return ''
